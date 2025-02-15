@@ -1,54 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Diario Digital</title>
+    <title>Iniciar Sesión | El Diario Digital</title>
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>El Diario Digital</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="deportes.html">Deportes</a></li>
-                <li><a href="economia.html">Economía</a></li>
-                <li><a href="tecnologia.html">Tecnología</a></li>
-            </ul>
-        </nav>
+        <h1>📰 El Diario Digital</h1>
     </header>
+
     <main>
-        <section>
-            <h2>Noticias Destacadas</h2>
-            <article>
-                <h3>Titular Principal</h3>
-                <img src="../static/images/main-news.jpg" alt="Imagen de la noticia principal">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Leer más</a>
-            </article>
-            <div class="noticias-preview">
-                <article>
-                    <h3>Equipo Local Gana el Campeonato</h3>
-                    <img src="../static/images/sport-news.webp" alt="Equipo celebrando">
-                    <p>El equipo local se coronó campeón tras un emocionante partido.</p>
-                    <a href="deportes.html">Leer más</a>
-                </article>
-                <article>
-                    <h3>Mercado Bursátil Alcanza Nuevo Récord</h3>
-                    <img src="../static/images/economy-news.webp" alt="Gráfico de mercado bursátil">
-                    <p>El índice principal de la bolsa alcanzó un máximo histórico.</p>
-                    <a href="economia.html">Leer más</a>
-                </article>
-                <article>
-                    <h3>Nueva IA Revoluciona la Industria</h3>
-                    <img src="../static/images/tech-news.webp" alt="Robot con inteligencia artificial">
-                    <p>Una startup ha desarrollado una IA que transforma múltiples sectores.</p>
-                    <a href="tecnologia.html">Leer más</a>
-                </article>
-            </div>
+        <section class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="POST">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+<button type="button" onclick="window.location.href='home.html'">Ingresar</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 El Diario Digital. Todos los derechos reservados.</p>
     </footer>

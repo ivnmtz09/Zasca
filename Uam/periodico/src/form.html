@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Noticia</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Crear Noticia</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">🏠 Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Publica tu noticia</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="titulo">🖊️ Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="categoria">📂 Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="deportes">Deportes</option>
+                    <option value="economia">Economía</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="imagen">📸 Subir imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+
+                <label for="contenido">📢 Contenido:</label>
+                <textarea id="contenido" name="contenido" rows="5" required></textarea>
+
+                <button type="submit">Publicar Noticia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Diario Digital. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
