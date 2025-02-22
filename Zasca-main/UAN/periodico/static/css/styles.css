@@ -1,0 +1,312 @@
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #1a1a1a;
+  border-bottom: 3px solid #1a1a1a;
+  padding-bottom: 10px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+/* NOTICIAS PREVIEW */
+.noticias-preview {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.noticias-preview article {
+  flex: 1;
+  max-width: 30%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.noticias-preview article:hover {
+  transform: translateY(-5px);
+}
+
+.noticias-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .noticias-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noticias-preview article {
+    max-width: 90%;
+  }
+}
+
+.img-principal {
+  display: block;
+  min-width: 100%; /* Ajusta el tamaño según necesites */
+  aspect-ratio: 16:9;
+  margin: 10px auto; /* Centra la imagen */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+/* FORMULARIO */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+form button:hover {
+  background: #ff6600;
+}
+
+/* RESPONSIVE FORM */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+/* LOGIN FORM */
+.login-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.login-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.login-container button {
+  background: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.login-container button:hover {
+  background: #ff6600;
+}
+
+.login-container p {
+  margin-top: 15px;
+}
+
+.login-container a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.boton-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color:  #ff6600;
+}

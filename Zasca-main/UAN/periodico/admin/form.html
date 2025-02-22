@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Noticia</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Crear Noticia</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Publica tu noticia</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="titulo">🖊️ Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="categoria">📂 Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="deportes">Deportes</option>
+                    <option value="economia">Economía</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="politica">Politica</option>
+                    <option value="entretenimiento">Entretenimiento</option>
+                    <option value="salud">Salud</option>
+                    <option value="medioambiente">Medio Ambiente</option>
+                    <option value="seguridad">Seguridad</option>
+                </select>
+                <label for="ciudad">Ciudad:</label>
+<select id="ciudad" name="ciudad">
+    <option value="">Seleccione una ciudad</option>
+
+    <optgroup label="Amazonas">
+        <option value="Leticia">Leticia</option>
+        <option value="Puerto Nariño">Puerto Nariño</option>
+    </optgroup>
+
+    <optgroup label="Antioquia">
+        <option value="Medellín">Medellín</option>
+        <option value="Bello">Bello</option>
+        <option value="Envigado">Envigado</option>
+        <option value="Itagüí">Itagüí</option>
+        <option value="Apartadó">Apartadó</option>
+    </optgroup>
+
+    <optgroup label="Arauca">
+        <option value="Arauca">Arauca</option>
+        <option value="Tame">Tame</option>
+        <option value="Saravena">Saravena</option>
+    </optgroup>
+
+    <optgroup label="Atlántico">
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Soledad">Soledad</option>
+        <option value="Malambo">Malambo</option>
+        <option value="Puerto Colombia">Puerto Colombia</option>
+    </optgroup>
+
+    <optgroup label="Bolívar">
+        <option value="Cartagena">Cartagena</option>
+        <option value="Magangué">Magangué</option>
+        <option value="Turbaco">Turbaco</option>
+    </optgroup>
+
+    <optgroup label="Boyacá">
+        <option value="Tunja">Tunja</option>
+        <option value="Duitama">Duitama</option>
+        <option value="Sogamoso">Sogamoso</option>
+    </optgroup>
+
+    <optgroup label="Caldas">
+        <option value="Manizales">Manizales</option>
+        <option value="La Dorada">La Dorada</option>
+    </optgroup>
+
+    <optgroup label="Caquetá">
+        <option value="Florencia">Florencia</option>
+    </optgroup>
+
+    <optgroup label="Casanare">
+        <option value="Yopal">Yopal</option>
+    </optgroup>
+
+    <optgroup label="Cauca">
+        <option value="Popayán">Popayán</option>
+        <option value="Santander de Quilichao">Santander de Quilichao</option>
+    </optgroup>
+
+    <optgroup label="Cesar">
+        <option value="Valledupar">Valledupar</option>
+    </optgroup>
+
+    <optgroup label="Chocó">
+        <option value="Quibdó">Quibdó</option>
+    </optgroup>
+
+    <optgroup label="Córdoba">
+        <option value="Montería">Montería</option>
+    </optgroup>
+
+    <optgroup label="Cundinamarca">
+        <option value="Bogotá">Bogotá</option>
+        <option value="Soacha">Soacha</option>
+    </optgroup>
+
+    <optgroup label="Guainía">
+        <option value="Inírida">Inírida</option>
+    </optgroup>
+
+    <optgroup label="Guaviare">
+        <option value="San José del Guaviare">San José del Guaviare</option>
+    </optgroup>
+
+    <optgroup label="Huila">
+        <option value="Neiva">Neiva</option>
+    </optgroup>
+
+    <optgroup label="La Guajira">
+        <option value="Riohacha">Riohacha</option>
+        <option value="Maicao">Maicao</option>
+    </optgroup>
+
+    <optgroup label="Magdalena">
+        <option value="Santa Marta">Santa Marta</option>
+    </optgroup>
+
+    <optgroup label="Meta">
+        <option value="Villavicencio">Villavicencio</option>
+    </optgroup>
+
+    <optgroup label="Nariño">
+        <option value="Pasto">Pasto</option>
+        <option value="Ipiales">Ipiales</option>
+    </optgroup>
+
+    <optgroup label="Norte de Santander">
+        <option value="Cúcuta">Cúcuta</option>
+    </optgroup>
+
+    <optgroup label="Putumayo">
+        <option value="Mocoa">Mocoa</option>
+    </optgroup>
+
+    <optgroup label="Quindío">
+        <option value="Armenia">Armenia</option>
+    </optgroup>
+
+    <optgroup label="Risaralda">
+        <option value="Pereira">Pereira</option>
+    </optgroup>
+
+    <optgroup label="San Andrés y Providencia">
+        <option value="San Andrés">San Andrés</option>
+    </optgroup>
+
+    <optgroup label="Santander">
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Floridablanca">Floridablanca</option>
+        <option value="Girón">Girón</option>
+    </optgroup>
+
+    <optgroup label="Sucre">
+        <option value="Sincelejo">Sincelejo</option>
+    </optgroup>
+
+    <optgroup label="Tolima">
+        <option value="Ibagué">Ibagué</option>
+    </optgroup>
+
+    <optgroup label="Valle del Cauca">
+        <option value="Cali">Cali</option>
+        <option value="Palmira">Palmira</option>
+        <option value="Buenaventura">Buenaventura</option>
+    </optgroup>
+
+    <optgroup label="Vaupés">
+        <option value="Mitú">Mitú</option>
+    </optgroup>
+
+    <optgroup label="Vichada">
+        <option value="Puerto Carreño">Puerto Carreño</option>
+    </optgroup>
+</select>
+
+                <label for="imagen">📸 Subir imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+
+                <label for="contenido">📢 Contenido:</label>
+                <textarea id="contenido" name="contenido" rows="5" required></textarea>
+
+                <button type="submit">Publicar Noticia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Diario Digital. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Diario Moderno</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #34495e;
+            --background-color: #ecf0f1;
+            --card-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--card-color);
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .content {
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        main {
+            flex: 3;
+        }
+
+        .article {
+            background-color: var(--card-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .article:hover {
+            transform: translateY(-5px);
+        }
+
+        .article h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .article-meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        .sidebar-content {
+            background-color: var(--card-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-content h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .sidebar-content ul {
+            padding-left: 20px;
+        }
+
+        .sidebar-content li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>El Diario Moderno</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Cultura</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <main>
+                <article class="article">
+                    <h2>Innovaciones Tecnológicas Revolucionan la Industria</h2>
+                    <div class="article-meta">Por Ana Martínez | 22 de Febrero, 2025</div>
+                    <p>La inteligencia artificial y la realidad aumentada están transformando la forma en que interactuamos con la tecnología. Empresas líderes están implementando soluciones innovadoras que prometen cambiar nuestro día a día.</p>
+                    <p>Expertos predicen que estas tecnologías tendrán un impacto significativo en sectores como la salud, la educación y el transporte en los próximos años.</p>
+                </article>
+
+                <article class="article">
+                    <h2>Avances en Energía Sostenible Marcan un Hito</h2>
+                    <div class="article-meta">Por Carlos Rodríguez | 22 de Febrero, 2025</div>
+                    <p>Un nuevo tipo de panel solar ha batido récords de eficiencia, prometiendo una revolución en la generación de energía limpia. Esta tecnología podría hacer que la energía solar sea más accesible y eficiente que nunca.</p>
+                </article>
+            </main>
+
+            <aside>
+                <div class="sidebar-content">
+                    <h3>Noticias Destacadas</h3>
+                    <ul>
+                        <li>Descubrimiento de exoplaneta potencialmente habitable</li>
+                        <li>Nueva terapia genética muestra resultados prometedores</li>
+                        <li>Avances en computación cuántica superan expectativas</li>
+                        <li>Festival de arte digital atrae a millones de visitantes virtuales</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
